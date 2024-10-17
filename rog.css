@@ -1,0 +1,258 @@
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    color: aliceblue;
+}
+
+/* Responsive Header */
+.header1 {
+    width: 97%;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header2 {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(204, 0, 14);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left, .middle, .right {
+    display: flex;
+    align-items: center;
+}
+
+.middle {
+    flex-grow: 1;
+    justify-content: center;
+    gap: 15px;
+    font-size: 14px;
+}
+
+.right {
+    gap: 10px;
+}
+
+.rog-icon, .asus-icon, .search-icon, .cart, .profile {
+    width: 30px;
+    cursor: pointer;
+}
+
+/* Hero image */
+.big-pic {
+    width: 100%;
+    height: auto;
+}
+
+/* Products section */
+.our-products {
+    width: 100%;
+    margin: 50px 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 32px;
+}
+
+.techs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tech1 {
+    flex-basis: 45%;
+    max-width: 230px;
+    margin: 10px;
+    text-align: center;
+}
+
+.scale-img {
+    width: 100%;
+    transition: 0.3s;
+}
+
+.lapy {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Recent releases */
+.recent-releases {
+    width: 98.5%;
+    background-image: url("images of rog/rog wall.jpg");
+    background-size: cover;
+    padding: 20px 10px;
+}
+
+.pics-div1, .pics-div2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.photos, .photos2 {
+    flex-basis: 48%;
+    max-width: 750px;
+    height: auto;
+    overflow: hidden;
+}
+
+.item1, .item2, .item3, .item4, .item5 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+/* Long Div */
+.long-div {
+    width: 100%;
+    position: relative;
+    margin-top: 50px;
+}
+
+.long-img {
+    width: 100%;
+    height: auto;
+}
+
+.para {
+    position: absolute;
+    right: 10%;
+    top: 30%;
+    max-width: 600px;
+    color: white;
+}
+
+.para-head {
+    font-weight: 800;
+    font-size: 36px;
+}
+
+.learn {
+    font-size: 18px;
+    font-weight: bold;
+    color: orange;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    background-image: url("images of rog/footer-image.jpeg");
+    background-size: cover;
+    color: #9e9595;
+    padding: 30px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.foot1, .foot2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+.facebook, .twitter, .access {
+    width: 20px;
+}
+
+/* Hover effects */
+.shop:hover, .product:hover, .innovation:hover, .download:hover,
+.community:hover, .hot:hover, .pba:hover, .support:hover,
+.help:hover, .home:hover, .about:hover, .us:hover, .privacy:hover, .terms:hover {
+    color: red;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .middle {
+        font-size: 12px;
+        padding-left: 0;
+    }
+
+    .header1, .header2 {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 10px;
+    }
+
+    .techs {
+        gap: 10px;
+    }
+
+    .tech1 {
+        flex-basis: 100%;
+        max-width: none;
+    }
+
+    .para {
+        top: 10%;
+        right: 5%;
+        font-size: 16px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .middle {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .our-products h2 {
+        font-size: 24px;
+    }
+
+    .lapy {
+        font-size: 16px;
+    }
+
+    .recent-releases {
+        padding: 10px;
+    }
+
+    .item1, .item2, .item3, .item4, .item5 {
+        height: 150px;
+    }
+
+    .para {
+        font-size: 14px;
+    }
+
+    .para-head {
+        font-size: 30px;
+    }
+
+    .learn {
+        font-size: 14px;
+    }
+}
